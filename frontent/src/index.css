@@ -56,3 +56,32 @@ SHAKE ANIMATION ON HORIZONTAL DIRECTION
 		transform: translate3d(4px, 0, 0);
 	}
 }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Smooth scrolling for messages */
+.message-container {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for message area */
+.message-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
